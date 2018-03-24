@@ -32,7 +32,7 @@
     text: "Hello, I'm Sharif Khlief a freelance developer based in Prague. I've always been drawn to the overlap between design and development. My skills are broad: front end to back end development. I enjoy each aspect, and love building a website from start to finish, I build rich web environments using the most sophisticated technologies available today for interactive and responsive websites, for clients all over the world.",
     index: 0,
     chars: 0,
-    speed: 100,
+    speed: 70,
     container: ".typing-effect .content",
     init: function() {
       this.chars = this.text.length;

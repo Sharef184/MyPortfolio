@@ -67,12 +67,12 @@ header .container nav li a {
 }
 
 header .container nav a:hover {
-	color: #e43b40;
 	text-decoration: none;
-	transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
+	border-bottom: 2px solid #e43b40;
+	transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	-ms-transition: all .1s ease;
 }
 
 header h1.my-name{
