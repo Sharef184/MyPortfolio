@@ -271,7 +271,16 @@ header .container h3.background-text{
 .recent-projects .container {
 	margin-top: 100px;
 	height: 500px;
+	z-index: 3;
+	position: relative;
 }
+
+.recent-projects .container a img {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 
  .recent-projects .chevron {
      height: 220px;
