@@ -86,4 +86,4 @@ $("nav ul li a").click(function() {
 
 //Copyright
 var currentYear = new Date().getFullYear();
-document.getElementById("footer").innerHTML = 'Handmade By Me &copy;' + currentYear + '.';
+document.getElementById("footer").innerHTML = '&copy; ' + currentYear + ' - SharifKhlief';
