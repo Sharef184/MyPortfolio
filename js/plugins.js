@@ -86,4 +86,8 @@ $("nav ul li a").click(function() {
 
 //Copyright
 var currentYear = new Date().getFullYear();
+<<<<<<< HEAD
 document.getElementById("footer").innerHTML = '&copy; Copyright ' + currentYear + ' - SharifKhlief';
+=======
+document.getElementById("footer").innerHTML = '&copy; ' + currentYear + ' - SharifKhlief';
+>>>>>>> c81d555160e8bc494d1fa08047889a71b596c224

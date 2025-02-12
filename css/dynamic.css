@@ -45,6 +45,13 @@ body {
 
 .cta-button:hover {
   background-color: #ca797a;
+<<<<<<< HEAD
+=======
+}
+
+.sendToPdfFiller {
+  display: none !important;
+>>>>>>> c81d555160e8bc494d1fa08047889a71b596c224
 }
 
 /* Gray Border */
