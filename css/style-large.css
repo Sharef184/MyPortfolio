@@ -174,7 +174,7 @@ header .container h3.background-text {
 
 .recent-projects .container {
   margin-top: 350px;
-  height: 450px;
+  min-height: 450px;
   z-index: 3;
   position: relative;
 }
