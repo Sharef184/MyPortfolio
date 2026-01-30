@@ -3,9 +3,9 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
-import Services from './components/Services'
+import TechnicalExpertise from './components/TechnicalExpertise'
 import Projects from './components/Projects'
-import Resume from './components/Resume'
+// import Resume from './components/Resume'
 import Contact from './components/Contact'
 import { motion, useScroll, useSpring } from 'framer-motion'
 
@@ -45,9 +45,9 @@ function App() {
       <Container fluid className="px-0">
         <Hero />
         <About />
-        <Services />
+        <TechnicalExpertise />
         <Projects />
-        <Resume />
+        {/* <Resume /> */}
         <Contact />
       </Container>
     </>

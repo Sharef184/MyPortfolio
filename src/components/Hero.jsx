@@ -2,7 +2,8 @@ import { motion } from 'framer-motion'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import { FiChevronDown } from 'react-icons/fi'
-import Profile from '../assets/images/Me2.jpg'
+import Profile from '../assets/images/Me.png'
+import CV from '../assets/SharifKhlief-CV.pdf'
 
 const Hero = () => {
   return (
@@ -16,11 +17,10 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
             >
               <h6 className="text-accent mb-3">Hello, I'm</h6>
-              <h1 className="display-3 fw-bold mb-4">Sharif Khlief</h1>
-              <h2 className="h3 mb-4">Web Developer</h2>
+              <h1 className="display-3 fw-bold mb-3">Sharif Khlief</h1>
+              <h2 className="h3 mb-3">Full-Stack Developer</h2>
               <p className="lead mb-5">
-                I craft high-quality web environments using advanced technologies to build interactive, 
-                responsive, and user-centric websites for clients worldwide.
+                Building modern web & mobile applications with React, Node.js, and AI-powered tools
               </p>
               <div className="d-flex gap-3">
                 <Link to="contact" smooth={true} duration={500}>
@@ -28,11 +28,11 @@ const Hero = () => {
                     Contact Me
                   </Button>
                 </Link>
-                <Link to="resume" smooth={true} duration={500}>
+                <a href={`${CV}#toolbar=0`} target="_blank" rel="noopener noreferrer"className="text-decoration-none">
                   <Button variant="outline-light" className="px-4 py-3">
                     View My Resume
                   </Button>
-                </Link>
+                </a>
               </div>
             </motion.div>
           </Col>

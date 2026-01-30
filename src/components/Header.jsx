@@ -19,6 +19,14 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'expertise', label: 'Technical Expertise' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'contact', label: 'Contact' }
+  ]
+
   return (
     <Navbar expand="lg" fixed="top" className={scrolled ? 'scrolled' : ''}>
       <Container>
@@ -34,23 +42,23 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler-white" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            {['home', 'about', 'services', 'projects', 'resume', 'contact'].map((item) => (
+            {navItems.map((item, index) => (
               <motion.div
-                key={item}
+                key={item.id}
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.1 * ['home', 'about', 'services', 'projects', 'resume', 'contact'].indexOf(item) }}
+                transition={{ duration: 0.3, delay: 0.1 * index }}
               >
                 <Link
                   activeClass="active"
-                  to={item}
+                  to={item.id}
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                   className="nav-link"
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {item.label}
                 </Link>
               </motion.div>
             ))}

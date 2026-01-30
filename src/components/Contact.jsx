@@ -73,7 +73,6 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-sec" ref={ref}>
-      {/* ✅ Centered Alert */}
       <AnimatePresence>
         {status !== 'idle' && message && (
           <motion.div
